@@ -1,0 +1,66 @@
+/* Full-screen black background */
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000000; /* Pure black */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Smoky Effect Box */
+.random-box {
+  background: rgba(17, 17, 17, 0.8); /* Dark gray with transparency */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Soft white glow */
+  animation: smokeEffect 4s infinite alternate ease-in-out;
+}
+
+/* Smoke Animation */
+@keyframes smokeEffect {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Title Styling */
+h1 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Number Display */
+h2 {
+  color: green; /* green */
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Button Styling */
+button {
+  background: #333; /* Dark button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #444; /* Slightly lighter hover */
+}
